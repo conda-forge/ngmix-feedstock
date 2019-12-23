@@ -1,5 +1,5 @@
 {% set name = "ngmix" %}
-{% set version = "1.3.6" %}
+{% set version = "1.3.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/esheldon/ngmix/archive/v{{ version }}.tar.gz
-  sha256: e0ddf54ef979f43c290922db4886414db19bf3c5a6edc8c25e255b0583b30828
+  sha256: 8d35fd7f28e0ff1ba14938ca3836eea3d4c55ca7ce78328c9ae805c7208664fb
 
 build:
   number: 0
