@@ -10,7 +10,7 @@ source:
   sha256: 8d35fd7f28e0ff1ba14938ca3836eea3d4c55ca7ce78328c9ae805c7208664fb
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   skip: True  # [win]
 
@@ -35,7 +35,7 @@ about:
   license: GPL-2
   license_family: GPL
   license_file: gpl.txt
-  summary: 'Gaussian mixtures and image processing implemented in python and C'
+  summary: 'Gaussian mixtures and image processing implemented in python and numba'
 
 extra:
   recipe-maintainers:
