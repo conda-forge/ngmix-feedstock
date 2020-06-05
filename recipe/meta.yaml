@@ -35,7 +35,7 @@ about:
   license: GPL-2
   license_family: GPL
   license_file: gpl.txt
-  summary: 'Gaussian mixtures and image processing implemented in python and C'
+  summary: 'Gaussian mixtures and image processing implemented in python and numba'
 
 extra:
   recipe-maintainers:
