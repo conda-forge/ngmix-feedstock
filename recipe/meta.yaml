@@ -10,7 +10,7 @@ source:
   sha256: f3b5f04610d284fae0e72046032c2c1a33f71461fa853b1b2af5f101ebd71c11
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: true  # [win]
 
@@ -24,7 +24,7 @@ requirements:
     - numba <0.41.0a|>=0.43.0  # bug in numba 0.41.* and 0.42.* series
     - scipy
     - galsim
-    - emcee
+    - meds
 
 test:
   imports:
