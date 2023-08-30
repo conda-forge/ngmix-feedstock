@@ -36,7 +36,10 @@ outputs:
   
   - name: ngmix
     requirements:
+      host:
+        - python
       run:
+        - python
         - {{ pin_subpackage("ngmix-core", exact=True) }}
         - meds
     test:
