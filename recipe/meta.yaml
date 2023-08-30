@@ -15,7 +15,7 @@ build:
 
 outputs:
   - name: ngmix-core
-    script: {{ PYTHON }} -m pip install . --no-deps -vv
+    script: build_core.sh
     requirements:
       build:
         - python                                 # [build_platform != target_platform]
