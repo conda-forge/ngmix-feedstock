@@ -1,5 +1,5 @@
-About ngmix-feedstock
-=====================
+About ngmix-split-feedstock
+===========================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ngmix-feedstock/blob/main/LICENSE.txt)
 
@@ -52,6 +52,34 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6244&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/ngmix-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.9.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_python3.10.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6244&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/ngmix-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_python3.10.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_python3.11.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6244&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/ngmix-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_python3.11.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_python3.8.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6244&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/ngmix-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_python3.8.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_python3.9.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6244&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/ngmix-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -124,27 +152,28 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-ngmix-green.svg)](https://anaconda.org/conda-forge/ngmix) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/ngmix.svg)](https://anaconda.org/conda-forge/ngmix) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/ngmix.svg)](https://anaconda.org/conda-forge/ngmix) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/ngmix.svg)](https://anaconda.org/conda-forge/ngmix) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-ngmix--core-green.svg)](https://anaconda.org/conda-forge/ngmix-core) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/ngmix-core.svg)](https://anaconda.org/conda-forge/ngmix-core) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/ngmix-core.svg)](https://anaconda.org/conda-forge/ngmix-core) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/ngmix-core.svg)](https://anaconda.org/conda-forge/ngmix-core) |
 
-Installing ngmix
-================
+Installing ngmix-split
+======================
 
-Installing `ngmix` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `ngmix-split` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `ngmix` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `ngmix, ngmix-core` can be installed with `conda`:
 
 ```
-conda install ngmix
+conda install ngmix ngmix-core
 ```
 
 or with `mamba`:
 
 ```
-mamba install ngmix
+mamba install ngmix ngmix-core
 ```
 
 It is possible to list all of the versions of `ngmix` available on your platform with `conda`:
@@ -214,17 +243,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating ngmix-feedstock
-========================
+Updating ngmix-split-feedstock
+==============================
 
-If you would like to improve the ngmix recipe or build a new
+If you would like to improve the ngmix-split recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/ngmix-feedstock are
+Note that all branches in the conda-forge/ngmix-split-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
