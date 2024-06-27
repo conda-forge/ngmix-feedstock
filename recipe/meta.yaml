@@ -1,5 +1,5 @@
 {% set name = "ngmix-split" %}
-{% set version = "2.3.0" %}
+{% set version = "2.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/esheldon/ngmix/archive/v{{ version }}.tar.gz
-  sha256: 232cfbb076d269a6b909886e16960ee9dc6808734567defd5bd7e272cff1e214
+  sha256: f0e8d44c6ce70194246f5560289bb9a41f9b52ea7e234e129cb215b5eadb2d22
 
 build:
-  number: 4
+  number: 0
   skip: true  # [win]
 
 outputs:
@@ -33,7 +33,7 @@ outputs:
     test:
       imports:
         - ngmix
-  
+
   - name: ngmix
     requirements:
       host:
