@@ -23,6 +23,7 @@ outputs:
       host:
         - python
         - pip
+        - setuptools
       run:
         - python
         - numpy
