@@ -1,5 +1,5 @@
 {% set name = "ngmix-split" %}
-{% set version = "2.3.2" %}
+{% set version = "2.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/esheldon/ngmix/archive/v{{ version }}.tar.gz
-  sha256: 0e1cb66643ef8a75a5b993b257d58c90fb30e1ba5b34e2cb5345d674f616d82c
+  sha256: f963f412b8c578a177fa4d433e005c7494ccdcf8057939cdf471e5a32ec5d2c0
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
 
 outputs:
